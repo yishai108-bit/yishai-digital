@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>המלצה | yishai.digital</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="כמה מילים על העבודה שעשינו יחד.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="כמה מילים על העבודה שלנו?">
+<meta property="og:description" content="דקה אחת, ישר לוואטסאפ של ישי.">
+<meta property="og:url" content="https://yishai108-bit.github.io/yishai-digital/review/">
+<meta property="og:image" content="https://yishai108-bit.github.io/yishai-digital/review/og.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="../brand/yishai-icon.svg">
+<link rel="apple-touch-icon" href="../brand/apple-touch-icon.png">
+<meta name="theme-color" content="#2f5d50">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap">
+<style>
+:root{
+  --bg:#f7f6f3;--surface:#fff;--ink:#16181a;--muted:#5f6366;--soft:#8b8f92;--line:#e2ded6;
+  --accent:#2f5d50;--deep:#1f3d35;--mint:#9cc2b4;--wa:#1f7a4d;
+  --font:"Heebo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.top{background:var(--accent);padding:22px max(20px,env(safe-area-inset-left,0px)) 64px;text-align:center}
+.top img{height:46px;width:auto;display:inline-block}
+.wrap{max-width:560px;margin:-44px auto 0;padding:0 16px 48px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px 22px;box-shadow:0 20px 40px -28px rgba(30,50,40,.35)}
+h1{font-size:clamp(26px,6.4vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 22px}
+label{display:block;font-weight:700;font-size:16px;margin:18px 0 6px}
+label small{font-weight:400;color:var(--soft)}
+input[type=text],textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+textarea{min-height:88px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--accent);background:#fff}
+.hint{font-size:14px;color:var(--soft);margin-top:4px}
+.stars{display:flex;gap:6px;direction:ltr;justify-content:flex-end}
+.stars button{background:none;border:0;padding:4px;cursor:pointer;color:var(--line)}
+.stars button svg{width:34px;height:34px;display:block}
+.stars button.on{color:#e3a72f}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:15px;color:var(--muted);margin-top:22px}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--accent);flex:0 0 auto}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;margin-top:24px;border:0;border-radius:999px;background:var(--wa);color:#fff;font:inherit;font-weight:700;font-size:18px;cursor:pointer}
+.btn svg{width:22px;height:22px}
+.btn:active{transform:scale(.99)}
+.err{color:#a1402a;font-size:15px;margin-top:10px;display:none}
+.thanks{display:none;text-align:center;padding:12px 0}
+.thanks h2{font-size:26px;margin:0 0 6px}
+.thanks p{color:var(--muted);margin:0}
+.foot{text-align:center;font-size:14px;color:var(--soft);margin-top:20px}
+</style>
+</head>
+<body>
+<header class="top"><a href="../"><img src="../brand/yishai-digital-white.svg" alt="yishai.digital" width="220" height="62"></a></header>
+
+<main class="wrap">
+  <div class="card">
+    <form id="f" novalidate>
+      <h1>כמה מילים על העבודה שלנו?</h1>
+      <p class="lead">לוקח דקה. בסוף זה נפתח בוואטסאפ ואתם רק לוחצים שלח.</p>
+
+      <label for="name">שם</label>
+      <input type="text" id="name" autocomplete="name" required>
+
+      <label for="biz">העסק <small>(שם ומקום)</small></label>
+      <input type="text" id="biz" placeholder="למשל: וילת צלילים, ירוחם">
+
+      <label for="q1">מה עשינו יחד?</label>
+      <textarea id="q1" placeholder="כרטיס גוגל, אתר, סיור וירטואלי..."></textarea>
+
+      <label for="q2">מה השתנה מאז? <small>(לא חובה)</small></label>
+      <textarea id="q2" placeholder="יותר פניות, נראה מקצועי יותר, חוסך זמן..."></textarea>
+
+      <label for="q3">מה הייתם אומרים לחבר שמתלבט?</label>
+      <textarea id="q3"></textarea>
+
+      <label>דירוג <small>(לא חובה)</small></label>
+      <div class="stars" id="stars" role="radiogroup" aria-label="דירוג"></div>
+
+      <label class="check"><input type="checkbox" id="ok" checked>מותר להציג את ההמלצה באתר, עם השם ושם העסק</label>
+
+      <button class="btn" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.6-.3Z"/></svg>שליחה בוואטסאפ</button>
+      <p class="err" id="err">צריך שם, ולפחות תשובה אחת.</p>
+    </form>
+    <div class="thanks" id="thanks"><h2>תודה רבה</h2><p>אם וואטסאפ לא נפתח, אפשר לשלוח את ההמלצה ישירות ל-050-659-2011.</p></div>
+  </div>
+  <p class="foot">ישי, שדה בוקר · yishai.digital@gmail.com</p>
+</main>
+
+<script>
+// Yishai's WhatsApp number (050-659-2011), international format without "+"
+var PHONE = "972506592011";
+var rating = 0;
+var starsEl = document.getElementById("stars");
+var STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
+for (var i = 1; i <= 5; i++) {
+  var b = document.createElement("button");
+  b.type = "button"; b.innerHTML = STAR; b.dataset.v = i;
+  b.setAttribute("role", "radio"); b.setAttribute("aria-label", i + " כוכבים");
+  b.onclick = function(){ rating = +this.dataset.v; paint(); };
+  starsEl.appendChild(b);
+}
+function paint(){ starsEl.querySelectorAll("button").forEach(function(b){ var on = +b.dataset.v <= rating; b.classList.toggle("on", on); b.setAttribute("aria-checked", +b.dataset.v === rating); }); }
+
+function v(id){ return document.getElementById(id).value.trim(); }
+document.getElementById("f").addEventListener("submit", function(e){
+  e.preventDefault();
+  var name = v("name"), biz = v("biz"), q1 = v("q1"), q2 = v("q2"), q3 = v("q3");
+  if (!name || !(q1 || q2 || q3)) { document.getElementById("err").style.display = "block"; return; }
+  var lines = ["המלצה ל-yishai.digital", "", "שם: " + name];
+  if (biz) lines.push("עסק: " + biz);
+  if (rating) lines.push("דירוג: " + rating + " מתוך 5");
+  if (q1) lines.push("", "מה עשינו: " + q1);
+  if (q2) lines.push("", "מה השתנה: " + q2);
+  if (q3) lines.push("", "לחבר שמתלבט: " + q3);
+  lines.push("", document.getElementById("ok").checked ? "מותר להציג באתר עם השם." : "לא להציג באתר.");
+  location.href = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(lines.join("\n"));
+  document.getElementById("f").style.display = "none";
+  document.getElementById("thanks").style.display = "block";
+});
+</script>
+</body>
+</html>
