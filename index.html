@@ -129,10 +129,10 @@ a.proj:hover .frame{transform:translateY(-4px)}
 .proj span{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:14px;font-weight:500;color:var(--accent)}
 .proj .tag{color:var(--soft);font-weight:400}
 .proj .frame.flip{perspective:1200px;background:none;border:0;overflow:visible}
-.flip .card{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.flip .card{position:relative;width:100%;height:100%;border-radius:inherit;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
 .flip .face{position:absolute;inset:0;border-radius:inherit;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line)}
 .flip .back{transform:rotateY(180deg)}
-@media (hover:hover){a.proj:hover .flip .card{transform:rotateY(180deg)}}
+@media (hover:hover){.proj:hover .flip .card{transform:rotateY(180deg)}}
 @media (hover:none){.flip.on .card{transform:rotateY(180deg)}}
 @media (prefers-reduced-motion:reduce){.flip .card{transition:none}}
 @media (max-width:980px){.projects{grid-template-columns:1fr 1fr}}
@@ -263,8 +263,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
       <a class="proj reveal" href="https://nonstop-tour-app.vercel.app/he" target="_blank" rel="noopener"><div class="frame flip"><div class="card"><div class="face front"><img src="img/nonstop-front.webp" alt="Nonstop Tour" loading="lazy" width="480" height="648"></div><div class="face back"><img src="img/nonstop-back.webp" alt="הדאשבורד של אפליקציית Nonstop Tour" loading="lazy" width="480" height="648"></div></div></div><b>Nonstop Tour</b><p>אפליקציה לאנשי הפקה בישראל: נגנים, סאונד, תאורה ומנהלי הפקה. הופעות, ציוד, ריידר ותשלומים במקום אחד, מסונכרן ליומן Google.</p><span>לצפייה<svg width="14" height="14" aria-hidden="true"><use href="#arrow"/></svg></span></a>
       <a class="proj reveal" href="https://bana-villa.com/" target="_blank" rel="noopener"><div class="frame"><img src="img/bana-villa.webp" alt="אתר Bána Villa" loading="lazy" width="480" height="648"></div><b>Bána Villa</b><p>אתר לפרויקט של 22 וילות בוטיק עם בריכה בקופנגן, תאילנד, לקונים מישראל.</p><span>לצפייה<svg width="14" height="14" aria-hidden="true"><use href="#arrow"/></svg></span></a>
       <a class="proj reveal" href="https://hidden-hin.com/" target="_blank" rel="noopener"><div class="frame"><img src="img/hidden-hin.webp" alt="אתר Hidden Hin" loading="lazy" width="480" height="648"></div><b>Hidden Hin</b><p>אתר ל-33 וילות עם בריכה פרטית ומועדון, עם מחירים בבאט, דולר ושקל.</p><span>לצפייה<svg width="14" height="14" aria-hidden="true"><use href="#arrow"/></svg></span></a>
-      <a class="proj reveal" href="demo/site-diary/" target="_blank" rel="noopener"><div class="frame"><img src="img/belectric.webp?v=2" alt="אפליקציית יומן אתר, גרסת הדגמה" loading="lazy" width="480" height="648"></div><b>יומן אתר ל-BELECTRIC</b><p>אפליקציה לניהול אתר הקמה של שדה סולארי: תעודות משלוח שה-AI קורא, מלאי, ניפוק לקבלנים עם חתימה, בטון, פאנלים ויומיות.</p><span>לצפייה בדמו, נתונים בדויים<svg width="14" height="14" aria-hidden="true"><use href="#arrow"/></svg></span></a>
-      <div class="proj reveal"><div class="frame"><img src="img/kikar.webp" alt="דפי נחיתה לפרויקט כיכר העיר" loading="lazy" width="480" height="648"></div><b>כיכר העיר</b><p>דפי נחיתה והרשמה לתוכנית תרבות דיגיטלית בשיתוף רשויות, עבור תטא הפקות. במשך חצי שנה, 50 דפים בשבוע: דף לכל יום, ל-10 ערים.</p></div>
+      <a class="proj reveal" href="demo/site-diary/" target="_blank" rel="noopener"><div class="frame flip"><div class="card"><div class="face front"><img src="img/belectric-front.webp" alt="יומן אתר" loading="lazy" width="480" height="648"></div><div class="face back"><img src="img/belectric.webp?v=2" alt="אפליקציית יומן אתר, גרסת הדגמה" loading="lazy" width="480" height="648"></div></div></div><b>יומן אתר ל-BELECTRIC</b><p>אפליקציה לניהול אתר הקמה של שדה סולארי: תעודות משלוח שה-AI קורא, מלאי, ניפוק לקבלנים עם חתימה, בטון, פאנלים ויומיות.</p><span>לצפייה בדמו, נתונים בדויים<svg width="14" height="14" aria-hidden="true"><use href="#arrow"/></svg></span></a>
+      <div class="proj reveal"><div class="frame flip"><div class="card"><div class="face front"><img src="img/kikar-front.webp" alt="כיכר העיר" loading="lazy" width="480" height="648"></div><div class="face back"><img src="img/kikar.webp" alt="דפי נחיתה לפרויקט כיכר העיר" loading="lazy" width="480" height="648"></div></div></div><b>כיכר העיר</b><p>דפי נחיתה והרשמה לתוכנית תרבות דיגיטלית בשיתוף רשויות, עבור תטא הפקות. במשך חצי שנה, 50 דפים בשבוע: דף לכל יום, ל-10 ערים.</p></div>
     </div>
   </div>
 </section>
