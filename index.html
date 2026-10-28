@@ -135,6 +135,8 @@ a.proj:hover .frame{transform:translateY(-4px)}
 @media (hover:hover){.proj:hover .flip .card{transform:rotateY(180deg)}}
 @media (hover:none){.flip.on .card{transform:rotateY(180deg)}}
 @media (prefers-reduced-motion:reduce){.flip .card{transition:none}}
+@media (hover:none){.flip .front::after{content:"לחצו להפוך";position:absolute;bottom:10px;right:10px;font:500 12px/1 Heebo,sans-serif;color:#fff;background:rgba(20,30,26,.62);padding:7px 10px;border-radius:99px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}.proj .flip{cursor:pointer}}
+
 @media (max-width:980px){.projects{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.projects{gap:28px 12px}.proj .frame{border-radius:14px}.proj b{font-size:16px;margin-top:10px}.proj p{font-size:13.5px}.proj span{font-size:13px}}
 
@@ -381,9 +383,14 @@ if ("IntersectionObserver" in window) {
 } else {
   document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
 }
-if ("IntersectionObserver" in window && matchMedia("(hover:none)").matches) {
-  var fo = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { var f = e.target; setTimeout(function(){ f.classList.add("on"); }, 900); fo.unobserve(f); } }); }, {threshold:.6});
-  document.querySelectorAll(".flip").forEach(function(el){ fo.observe(el); });
+if (matchMedia("(hover:none)").matches) {
+  document.querySelectorAll(".proj").forEach(function(card){
+    var f = card.querySelector(".flip"); if (!f) return;
+    card.addEventListener("click", function(e){
+      if (!f.classList.contains("on")) { e.preventDefault(); f.classList.add("on"); }
+      else if (card.tagName !== "A") { f.classList.remove("on"); }
+    });
+  });
 }
 </script>
 </body>
