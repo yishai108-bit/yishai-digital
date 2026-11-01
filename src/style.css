@@ -173,3 +173,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 p{text-wrap:pretty}
+.q:only-child{grid-column:1/-1;max-width:720px}
+.q figcaption a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.hero-q{display:block;margin-top:22px;font-size:16px;color:var(--ink);text-decoration:none;font-style:italic}
+.hero-q span{font-style:normal;color:var(--muted);font-size:14px;margin-inline-start:6px;white-space:nowrap}
