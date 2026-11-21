@@ -1,0 +1,22 @@
+.check{padding-top:clamp(28px,6vw,64px)}
+.check h1 .accent{color:var(--accent)}
+.check-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:860px){.check-grid{grid-template-columns:1fr}}
+.check-form{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:8px;max-width:520px}
+.check-form label{font-weight:700;font-size:16px;margin-top:6px}
+.check-form input,.check-form select{font:inherit;font-size:17px;min-height:52px;padding:0 14px;border:1px solid var(--line);border-radius:14px;background:var(--bg);color:var(--ink);width:100%}
+.check-form input:focus,.check-form select:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.check-form .btn{margin-top:14px;border:0;cursor:pointer;font-family:inherit;width:100%}
+.check-form .err{margin:4px 0 0;color:#a13a2a;font-size:15px}
+.check-form .fine{margin:6px 0 0;font-size:14px;color:var(--soft)}
+.fit{display:flex;flex-direction:column;gap:16px}
+.fit-box,.next{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.fit h2,.next h2{font-size:20px;margin:0 0 10px}
+.fit ul{list-style:none;padding:0;margin:0 0 18px;font-size:16px;color:var(--muted)}
+.fit ul:last-child{margin-bottom:0}
+.fit li{display:flex;gap:10px;padding:6px 0}
+.fit .yes li::before{content:"✓";color:var(--accent);font-weight:800}
+.fit .no li::before{content:"✕";color:#a13a2a;font-weight:800}
+.next ol{margin:0 0 14px;padding-inline-start:20px;font-size:16px;color:var(--muted)}
+.next li{padding:4px 0}
+.next .text-link{font-size:16px}
